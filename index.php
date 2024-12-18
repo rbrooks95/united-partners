@@ -129,7 +129,7 @@ $contacts = $stmt->fetchAll(PDO::FETCH_ASSOC);
 </head>
 <body>
 <div class="container">
-<h1>Contact Manager</h1>
+<h1>United Partners</h1>
 
 <form action="" method="POST">
     <h2>Add Contact</h2>
