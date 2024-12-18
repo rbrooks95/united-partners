@@ -1,0 +1,11 @@
+FROM php:7.4-apache
+
+# Install dependencies for PostgreSQL extensions
+RUN apt-get update && apt-get install -y libpq-dev \
+    && docker-php-ext-configure pgsql -with-pgsql=/usr/local/pgsql \
+    && docker-php-ext-install pgsql pdo_pgsql
+
+# Optional: enable Apache mods, etc.
+# RUN a2enmod rewrite
+
+# Your code will be copied via docker-compose volumes or COPY if desired
