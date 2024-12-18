@@ -5,7 +5,7 @@ services:
     # Bind host port 8080 to container port 80 for web access
     ports:
       - "8080:80"
-    # Mount project root so changes are reflected immediately
+
     volumes:
       - ../:/var/www/html
     depends_on:

@@ -1,5 +1,5 @@
 <?php
-// Database connection variables (adjust as needed)
+
 $dbhost = getenv('DB_HOST') ?: 'db';
 $dbuser = getenv('DB_USER') ?: 'myuser';
 $dbpass = getenv('DB_PASSWORD') ?: 'mypassword';
